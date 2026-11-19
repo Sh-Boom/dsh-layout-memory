@@ -60,7 +60,7 @@ The plugin reads the frame's `grid-template-columns` for widths, calls `layout.p
 
 ## Compatibility / 兼容性
 
-- Built against `@deepseek-ai/dsh-client-ui-layout` and `@deepseek-ai/dsh-client-ui-sidebar-right` from DSH `0.2.2-rc.3`. Other versions may move the internal actions used for width restore; the open/closed and width saving keep working as long as the frame attributes are unchanged.
+- Built and verified against `@deepseek-ai/dsh-client-ui-layout` and `@deepseek-ai/dsh-client-ui-sidebar-right` from DSH `0.2.2-rc.3` and `0.2.2-rc.5`. Other versions may move the internal actions used for width restore; the open/closed and width saving keep working as long as the frame attributes are unchanged.
 - Client-side only: no Host code, no dependencies, no network access.
 
 ## License
