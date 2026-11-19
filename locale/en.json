@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Sidebar width memory",
+    "description": "Keeps the left sidebar width and collapsed state, the right sidebar width, and the right panel's open state across reloads.",
+    "detail": "docs/DETAIL.md"
+  }
+}

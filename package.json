@@ -1,0 +1,46 @@
+{
+  "name": "dsh-layout-memory",
+  "version": "1.0.0",
+  "description": "Remembers DeepSeek Harness sidebar layout: left sidebar width and collapsed state, right panel width and open state, across reloads.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Sh-Boom",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "deepseek-harness-plugin",
+    "layout",
+    "sidebar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sh-Boom/dsh-layout-memory.git"
+  },
+  "homepage": "https://github.com/Sh-Boom/dsh-layout-memory",
+  "bugs": {
+    "url": "https://github.com/Sh-Boom/dsh-layout-memory/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-layout", "@deepseek-ai/dsh-client-ui-sidebar-right"]
+    }
+  }
+}

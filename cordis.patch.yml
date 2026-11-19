@@ -1,0 +1,3 @@
+- insert:
+    - id: layout-memory
+      name: '@local/dsh-layout-memory'
